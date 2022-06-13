@@ -1,11 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Á÷¿ø¿ë ·Î±×ÀÎ</title>
+<title>ê³ ê° ìˆ˜ì •</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -14,9 +12,9 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-light">
+	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="OT_main.html">OT»ç</a>
+			<a class="navbar-brand" href="OT_main.html">OTì‚¬</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,28 +28,28 @@
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="All_order_list.jsp"
 						id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false"> ÆÇ¸Å / Àç°í °ü¸® </a>
+						aria-expanded="false"> íŒë§¤ / ìž¬ê³  ê´€ë¦¬ </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="canceled_list.jsp">
-									Ãë¼ÒµÈ »óÇ° ¸ñ·Ï </a></li>
+									ì·¨ì†Œëœ ìƒí’ˆ ëª©ë¡ </a></li>
 							<li><a class="dropdown-item" href="pending_list.jsp">
-									º¸·ùÁßÀÎ »óÇ° ¸ñ·Ï </a></li>
+									ë³´ë¥˜ì¤‘ì¸ ìƒí’ˆ ëª©ë¡ </a></li>
 							<li><a class="dropdown-item" href="shipped_list.jsp">
-									¹è¼ÛµÈ »óÇ° ¸ñ·Ï </a></li>
+									ë°°ì†¡ëœ ìƒí’ˆ ëª©ë¡ </a></li>
 
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="total_sales.jsp"> ÆÇ¸ÅµÈ
-									»óÇ° °¡°Ý ¸ñ·Ï </a></li>
-							<li><a class="dropdown-item" href="take.jsp"> ÃÑ ÆÇ¸Å ±Ý¾×
-									(¸ÅÃâ)</a></li>
+							<li><a class="dropdown-item" href="total_sales.jsp"> íŒë§¤ëœ
+									ìƒí’ˆ ê°€ê²© ëª©ë¡ </a></li>
+							<li><a class="dropdown-item" href="take.jsp"> ì´ íŒë§¤ ê¸ˆì•¡
+									(ë§¤ì¶œ)</a></li>
 						</ul></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-						data-bs-toggle="dropdown" aria-expanded="false"> °í°´ °ü¸® </a>
+						data-bs-toggle="dropdown" aria-expanded="false"> ê³ ê° ê´€ë¦¬ </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="find.html">°í°´ °Ë»ö</a></li>
-							<li><a class="dropdown-item" href="join.jsp">°í°´ µî·Ï</a></li>
-							<li><a class="dropdown-item" href="#">°í°´ ¼öÁ¤</a></li>
+							<li><a class="dropdown-item" href="find.html">ê³ ê° ê²€ìƒ‰</a></li>
+							<li><a class="dropdown-item" href="join.jsp">ê³ ê° ë“±ë¡</a></li>
+							<li><a class="dropdown-item" href="#">ê³ ê° ìˆ˜ì •</a></li>
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">
@@ -66,32 +64,24 @@
 			</div>
 		</div>
 	</nav>
+	<br />
 
-	<br/>
-	
-	<form form action="login_ok.jsp" method="post">
-	<div class="d-flex flex-column">
-	<div class="p-2">
-	
-	<h2>·Î±×ÀÎ</h2>
-	</div>
-		<div class="p-2">
-		¾ÆÀÌµð:
-			<input type="text" name="id" style="width:300px" class="form-control"
-				placeholder="ID">
-		ºñ¹Ð¹øÈ£:
-		<input type="password" name="pw" style="width:300px" class="form-control"
-				placeholder="password">
-		</div>
-		<div class="p-2">
-			<button type="submit" class="btn btn-primary">·Î±×ÀÎ</button>
-		</div>
-		</div>
+	<form action="/TermProject/getInfo.jsp" method="post">
+		<div class="d-flex flex-column">
+			<div class="p-2">
 
+				<h2>ìˆ˜ì •í•  ê³ ê° ê²€ìƒ‰</h2>
+			</div>
+			<div class="p-2">
+				<input type="text" style="width: 300px" class="form-control"
+					name="find" placeholder="customer ID">
+			</div>
+			<div class="p-2">
+				<button type="submit" class="btn btn-primary">ì°¾ê¸°</button>
+			</div>
+		</div>
 	</form>
-	
 
-	
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

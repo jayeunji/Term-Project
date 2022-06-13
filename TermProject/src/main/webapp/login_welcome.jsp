@@ -13,10 +13,10 @@
 </head>
 <body>
 
-	<%=id %>(<%=first %> <%=last %>)님 안녕하세요!
+	<%=id %>(<%=first %> <%=last %>)님 안녕하세요!<br/>
+	<a href="OT_main.html">메인</a><br/>
 	<a href="logout.jsp">로그아웃</a><br/>
-	<a href="getInfo.jsp">정보 수정</a><br/>
-	<a href="shopping.jsp">주문 내역 확인</a><br/>
+	
 	<a href="delete_ok.jsp">회원탈퇴</a><br/>
 
 </body>
