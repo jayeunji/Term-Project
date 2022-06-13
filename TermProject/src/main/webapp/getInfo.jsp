@@ -13,8 +13,6 @@
 	// 정보수정 화면으로 가기전에
 	// 아이디 기준으로 회원정보를 조회해서 다음 화면으로 전달
 	
-	//<a href="shopping.jsp">주문 내역 확인</a><br/>
-	
 	String id = (String)session.getAttribute("customer_id");
 	String find = request.getParameter("find");
 
