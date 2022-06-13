@@ -52,7 +52,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="find.html">고객 검색</a></li>
 							<li><a class="dropdown-item" href="join.jsp">고객 등록</a></li>
-							<li><a class="dropdown-item" href="#">고객 수정</a></li>
+							<li><a class="dropdown-item" href="customer_modi.html">고객 수정</a></li>
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">

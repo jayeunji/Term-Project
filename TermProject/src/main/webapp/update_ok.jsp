@@ -10,15 +10,6 @@
 <body>
 
 <%
-	/*
-	1. 폼에서 넘어온 데이터를 각각 처리합니다.
-	2. SQL문을 이용해서 DB에 업데이트 작업.
-	3. executeUpdate() 성공시 1을 반환, 실패시 0을 반환
-	4. 업데이트가 성공하면 세션에 저장된 이름을 변경한 후에
-		update_success.jsp로 리다이렉트
-		
-	      업데이트에 실패하면, update_fail.jsp로 리다이렉트
-	*/
 
 	String id = request.getParameter("id");
 	String name = request.getParameter("name");
