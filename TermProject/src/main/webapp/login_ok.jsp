@@ -12,6 +12,7 @@
 <%
 
 	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
 
     // DB연결에 필요한 변수 선언
 	String url = "jdbc:oracle:thin:@203.247.166.95:1521:xe";
@@ -22,7 +23,7 @@
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	
-	String sql = "select * from employees where employee_id = ?";
+	String sql = "select * from employees where employee_id = ? and passwd = ?";
 	
 	try{
 		// 드라이버 호출
@@ -34,6 +35,7 @@
 		// pstmt 생성
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, id);
+		pstmt.setString(2, pw);
 		
 		// sql실행
 		rs = pstmt.executeQuery();

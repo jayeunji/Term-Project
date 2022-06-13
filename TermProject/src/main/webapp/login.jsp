@@ -79,6 +79,9 @@
 		아이디:
 			<input type="text" name="id" style="width:300px" class="form-control"
 				placeholder="ID">
+		비밀번호:
+		<input type="password" name="pw" style="width:300px" class="form-control"
+				placeholder="password">
 		</div>
 		<div class="p-2">
 			<button type="submit" class="btn btn-primary">로그인</button>
