@@ -52,7 +52,6 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="find.html">°í°´ °Ë»ö</a></li>
 							<li><a class="dropdown-item" href="join.jsp">°í°´ µî·Ï</a></li>
-							
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">
