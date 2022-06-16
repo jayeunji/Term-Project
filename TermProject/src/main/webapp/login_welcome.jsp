@@ -15,7 +15,6 @@
 	crossorigin="anonymous">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="OT_main.html">OT»ç</a>

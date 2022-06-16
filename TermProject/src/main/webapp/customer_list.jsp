@@ -13,7 +13,6 @@
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 	crossorigin="anonymous">
 </head>
-
 <body>
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">

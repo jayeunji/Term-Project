@@ -9,7 +9,6 @@
 </head>
 <body>
 	<%
-	
 	String id = request.getParameter("id");
 	String name = request.getParameter("name");
 	String address = request.getParameter("address");

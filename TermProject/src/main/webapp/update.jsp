@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%
-	// 이전화면에서 전달받은 데이터를 받습니다.
-	// 화면에 미리 보여지도록 처리를 하세요~
 
 	String id = (String)request.getAttribute("customer_id");
 	String name = (String)request.getAttribute("name");

@@ -12,6 +12,5 @@
 	session.invalidate();
 	response.sendRedirect("OT_main.html");
 %>
-
 </body>
 </html>
