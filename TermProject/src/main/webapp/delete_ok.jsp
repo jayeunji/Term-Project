@@ -10,8 +10,7 @@
 <body>
 
 <%
-	// 1. id값은 세션에서 얻습니다.
-	String id = (String)session.getAttribute("customer_id");
+	String id = request.getParameter("id");
     
 	String url = "jdbc:oracle:thin:@203.247.166.95:1521:xe";
 	String uid = "DB201830327";
@@ -36,7 +35,7 @@
 		
 		if(result == 1){ // 성공
 			session.invalidate(); // 세션에 정보삭제
-			response.sendRedirect("login.jsp");			
+			response.sendRedirect("delete.html");			
 		} else{ // 실패
 			response.sendRedirect("login_welcome.jsp");
 		}

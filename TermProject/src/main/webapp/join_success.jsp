@@ -51,7 +51,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="find.html">고객 검색</a></li>
 							<li><a class="dropdown-item" href="join.jsp">고객 등록</a></li>
-							<li><a class="dropdown-item" href="customer_modi.html">고객 수정</a></li>
+							
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">
@@ -69,7 +69,6 @@
 	<br />
 
 	<h2>고객이 등록되었습니다.</h2>
-	<a href="OT_main.html">돌아가기</a>
 	
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -53,7 +53,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="find.html">고객 검색</a></li>
 							<li><a class="dropdown-item" href="join.jsp">고객 등록</a></li>
-							<li><a class="dropdown-item" href="customer_modi.html">고객 수정</a></li>
+							
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">
@@ -96,14 +96,14 @@
 			conn.close();
 			%>
 
-
-
-
+<br />
 	<a href="shopping.jsp?id=<%=id %>">주문 내역 조회하기</a>
+	<br />
+	<a href="getInfo.jsp?id=<%=id %>">고객 정보 수정</a>
 	<br />
 	<a href="logout.jsp">로그아웃</a>
 	<br />
-	<a href="delete_ok.jsp">고객 삭제</a>
+	<a href="delete_ok.jsp?id=<%=id %>">고객 삭제</a>
 	<br />
 	
 	<script

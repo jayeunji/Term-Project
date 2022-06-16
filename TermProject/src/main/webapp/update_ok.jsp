@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>고객 수정</title>
 </head>
 <body>
 

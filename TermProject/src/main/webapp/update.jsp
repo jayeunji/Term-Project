@@ -61,7 +61,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="find.html">°í°´ °Ë»ö</a></li>
 							<li><a class="dropdown-item" href="join.jsp">°í°´ µî·Ï</a></li>
-							<li><a class="dropdown-item" href="customer_modi.html">°í°´ ¼öÁ¤</a></li>
+							
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">
@@ -108,9 +108,6 @@
 	</div>
 	</div>
 </form>
-	
-	
-	
 	
 <script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
