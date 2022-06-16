@@ -100,7 +100,7 @@
 
 		<tbody class="table-group-divider">
 			<tr>
-				<td><a href = "login_welcome.jsp?<%=rs.getInt("customer_id")%>"><%=rs.getInt("customer_id")%></a></td>
+				<td><a href = "login_welcome.jsp?id=<%=rs.getInt("customer_id")%>"><%=rs.getInt("customer_id")%></a></td>
 				<td><%=rs.getString("name")%></td>
 			</tr>
 

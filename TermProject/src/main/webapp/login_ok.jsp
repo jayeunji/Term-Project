@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>직원용 로그인</title>
 </head>
 <body>
 
@@ -49,14 +49,14 @@
 			session.setAttribute("first_name", first);
 			session.setAttribute("last_name", last);
 			
-			response.sendRedirect("getInfo.jsp"); // 페이지이동
+			response.sendRedirect("OT_main.html"); // 페이지이동
 			
 		} else{ // 로그인 실패
 			response.sendRedirect("login_fail.jsp"); // 실패 페이지
 		}
 	} catch(Exception e){
 		e.printStackTrace();
-		response.sendRedirect("login_fail.jsp"); // 에러가 난 경우도 리다이렉트
+		response.sendRedirect("login_ok.jsp"); // 에러가 난 경우도 리다이렉트
 	} finally{
 		try{
 			if(conn != null) conn.close();
