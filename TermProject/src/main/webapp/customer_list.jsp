@@ -52,7 +52,8 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="find.html">°í°´ °Ë»ö</a></li>
 							<li><a class="dropdown-item" href="join.jsp">°í°´ µî·Ï</a></li>
-							<li><a class="dropdown-item" href="customer_modi.html">°í°´ ¼öÁ¤</a></li>
+							<li><a class="dropdown-item" href="customer_modi.html">°í°´
+									¼öÁ¤</a></li>
 						</ul></li>
 				</ul>
 				<form class="d-flex" role="search">
@@ -82,42 +83,43 @@
 					</tr>
 				</thead>
 				</div>
-		</div>
+				</div>
 
-		<%
-		String find = request.getParameter("find");
+				<%
+				String find = request.getParameter("find");
 
-		Class.forName("oracle.jdbc.OracleDriver");
-		Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@203.247.166.95:1521:xe", "DB201830327", "201830327");
+				Class.forName("oracle.jdbc.OracleDriver");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@203.247.166.95:1521:xe", "DB201830327", "201830327");
 
-		String sql = "select * from customers where customer_id = ? ";
-		PreparedStatement pst = conn.prepareStatement(sql);
-		pst.setString(1, find);
-		ResultSet rs = pst.executeQuery();
+				String sql = "select * from customers where customer_id = ? ";
+				PreparedStatement pst = conn.prepareStatement(sql);
+				pst.setString(1, find);
+				ResultSet rs = pst.executeQuery();
 
-		while (rs.next()) {
-		%>
+				while (rs.next()) {
+				%>
 
-		<tbody class="table-group-divider">
-			<tr>
-				<td><a href = "login_welcome.jsp?id=<%=rs.getInt("customer_id")%>"><%=rs.getInt("customer_id")%></a></td>
-				<td><%=rs.getString("name")%></td>
-			</tr>
+				<tbody class="table-group-divider">
+					<tr>
+						<td><a
+							href="login_welcome.jsp?id=<%=rs.getInt("customer_id")%>"><%=rs.getInt("customer_id")%></a></td>
+						<td><%=rs.getString("name")%></td>
+					</tr>
 
-		</tbody>
-		<%
-		}
+				</tbody>
+				<%
+				}
 
-		rs.close();
-		pst.close();
-		conn.close();
-		%>
+				rs.close();
+				pst.close();
+				conn.close();
+				%>
 
-		</table>
+			</table>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-			crossorigin="anonymous"></script>
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+				crossorigin="anonymous"></script>
 </body>
 </html>

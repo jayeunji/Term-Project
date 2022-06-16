@@ -81,14 +81,16 @@
 		PreparedStatement pst = conn.prepareStatement("select * from customers where customer_id = ?");
 		pst.setString(1, id);
 		ResultSet rs = pst.executeQuery();
+		
+		
+		while (rs.next()) {
 		%>
-		
-		
 
-		<%=id %> 님의 관리창입니다. <br />
+		<%=rs.getString("name")%> 님의 관리창입니다. <br />
 
 
 			<%
+		}
 			rs.close();
 			pst.close();
 			conn.close();
@@ -97,11 +99,11 @@
 
 
 
-	<a href="shopping.jsp">주문 내역 조회하기</a>
+	<a href="shopping.jsp?id=<%=id %>">주문 내역 조회하기</a>
 	<br />
 	<a href="logout.jsp">로그아웃</a>
 	<br />
-	<a href="delete_ok.jsp">회원탈퇴</a>
+	<a href="delete_ok.jsp">고객 삭제</a>
 	<br />
 	
 	<script
