@@ -116,7 +116,7 @@
 		</div> 
 	</div>
 	<br/>
-	<h1>  &emsp;  &emsp;  주요 메뉴 </h1> <br/>
+	<h1>  &emsp;  &emsp;  주요 메뉴 </h1> <br/> 
                 &emsp;  &emsp; &emsp; &emsp;  &emsp; <a href="All_order_list.jsp""><button class="custom-btn btn-16"> 모든 주문 내역 </button></a> 
                 &emsp;  &emsp; <a href="take.jsp"><button class="custom-btn btn-16"> 총 매출액 </button></a>
 	
