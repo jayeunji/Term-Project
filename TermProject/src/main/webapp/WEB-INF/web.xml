@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<security-role>
+<role-name>emp</role-name>
+</security-role>
+
+	<security-constraint>
+		<web-resource-collection>
+		<!-- web-resource-collection : 웹 자원에 대한 접근을 설정 -->
+			<web-resource-name>
+				<!-- 보안을 걸어줄 프로젝트(최상위 폴더) 명 -->
+				TermProject
+			</web-resource-name>
+			<url-pattern>
+				<!-- 제약 조건을 걸어줄 파일 -->
+				/*
+			</url-pattern>
+			<http-method>
+				<!-- 전송방식 : post or get 방식? -->
+				GET
+			</http-method>
+			<http-method>
+				POST
+			</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+<role-name>emp</role-name>
+</auth-constraint>
+
+		
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+	<form-login-page>/login.jsp</form-login-page>
+	<form-error-page>/login_fail.jsp</form-error-page>
+	</form-login-config>
+	</login-config>
+</web-app>
