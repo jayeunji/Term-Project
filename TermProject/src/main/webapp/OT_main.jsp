@@ -13,7 +13,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
-<body> 
+<body>
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="OT_main.jsp">OT»ç</a>
